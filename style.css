@@ -1,0 +1,56 @@
+.minha-imagem {
+
+    display: block;
+    width: 100%;
+    border-radius: 19px 19px 0px 0px;
+
+}
+
+.borda-branca {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: white;
+    width: 400px;
+    height: 650px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.Fundo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.h1 {
+    text-align: center;
+    color: hsl(223, 47%, 23%);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.p1 {
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+    font-size: 18px;
+}
+
+.card2 {
+    text-align: center;
+    justify-content: center;
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    border: 1px solid black;
+    position: relative;
+    border-radius: 10px;
+    align-items: center;
+    width: 90%;
+    height: 80px;
+
+}
