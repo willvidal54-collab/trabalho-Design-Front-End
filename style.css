@@ -1,3 +1,27 @@
+
+:root {
+    --azul-claro: hsl(225, 100%, 94%);
+    --azul-bem-claro: hsl(225, 100%, 98%);
+    --azul-forte: hsl(245, 75%, 52%);
+    --azul-hover: hsl(245, 83%, 68%);
+    --azul-cinza: hsl(224, 23%, 55%);
+    --azul-escuro: hsl(223, 47%, 23%);
+    --branco: #ffffff;
+}
+
+.body {
+    font-family: 'Red Hat Display', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: var(--azul-claro);
+    background-image: url("images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
 .minha-imagem {
 
     display: block;
@@ -14,7 +38,7 @@
 }
 
 .card {
-    background-color: white;
+    background-color: hsl(225, 100%, 98%);
     width: 400px;
     height: 650px;
     border-radius: 20px;
@@ -27,30 +51,71 @@
     left: 0;
     width: 100%;
     z-index: -1;
+    
 }
 
 .h1 {
     text-align: center;
     color: hsl(223, 47%, 23%);
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Red Hat Display', Arial, sans-serif;
 }
 
 .p1 {
     text-align: center;
     color: hsl(224, 23%, 55%);
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .card2 {
     text-align: center;
     justify-content: center;
-    background-color: hsl(225, 100%, 98%);
+    background-color: var(--azul-claro);
     display: flex;
-    border: 1px solid black;
     position: relative;
-    border-radius: 10px;
+    border-radius: 20px;
     align-items: center;
-    width: 90%;
+    width: 95%;
     height: 80px;
+    margin: 10px;
 
 }
+.btn-pagamento {
+   display: block;
+    width: 95%;
+    margin: 10px;
+    padding: 15px;
+    border: none;
+    border-radius: 11px;
+    background-color: var(--azul-forte);
+    color: var(--branco);
+    font-family: 'Red Hat Display', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    cursor: pointer;
+    box-shadow: 0px 20px 20px rgba(56, 41, 224, 0.19);
+    margin-bottom: 25px;
+}
+.btn-pagamento:hover {
+    background-color: var(--azul-hover);
+}
+.btn-cancelar {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    font-family: 'Red Hat Display', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    color: var(--azul-cinza);
+    cursor: pointer;
+}
+.btn-cancelar:hover {
+    color: var(--azul-escuro);
+}
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--azul-forte);
+    outline-offset: 3px;
+}
+
+
